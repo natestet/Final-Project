@@ -5,28 +5,6 @@
 </head>
 <body>
 	<script src="calc.js"></script>
-	<form id = "userForm">
-		<div>
-			<label for="roomArea">Total dining room area:</label>
-			<input type = "text" id="roomArea" name="roomArea" required>
-		</div>
-		<div>
-			<label for="numTables">Number of tables: </label>
-			<input type = "text" id="numTables" name="numTables"required>
-		</div>
-		<div>
-			<label for="tableLength">Length of each table:</label>
-			<input type = "text" id="tableLength" name="tableLength"required>
-		</div>
-		<div>
-			<label for="tableWidth">Width of each table:</label>
-			<input type = "text" id="tableWidth" name="tableWidth"required>
-		</div>
-		<div>
-			<label for="numSeats">Number of seats at each table: </label>
-			<input type = "text" id="numSeats" name="numSeats"required>
-		</div>
-		<button onclick=calcTotalSeats();>Calculate</button>
-	</form>
+	<button onclick=socialDistancingCheck();>Begin</button>
 </body>
 </html>
