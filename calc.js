@@ -12,9 +12,8 @@ function socialDistancingCheck(){
 	var seatsAfterTableRemoval = (numTables*numSeats) - (tableRemoval*numSeats);
 
 	if(numTables*TABLE_AREA<=DINING_ROOM_AREA){
-		window.alert("You can fit your tables in the dining room while maintaining social distancing! You have " + spareRoom + " feet to spare and you can seat " + totalSeats + "people.");
+		document.getElementById("results").innerHTML = "You can fit your tables in the dining room while maintaining social distancing! You have " + spareRoom + " feet to spare and you can seat " + totalSeats + " people.";
 	}else if(numTables*TABLE_AREA > DINING_ROOM_AREA){
-		window.alert("You cannot fit all your tables in the dining room while maintaing social distancing. To maintain social distancing, you have to remove " + tableRemoval + " tables and then you will be able to seat " + seatsAfterTableRemoval + " people.");
-	}
-	
+		document.getElementById("results").innerHTML = "You cannot fit all your tables in the dining room while maintaing social distancing. To maintain social distancing, you have to remove " + tableRemoval + " tables and then you will be able to seat " + seatsAfterTableRemoval + " people.";
+	}	
 }
