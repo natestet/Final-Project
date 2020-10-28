@@ -3,5 +3,26 @@
   <title>Home Page</title>
   <link rel = "stylesheet" href = "style.css">
 </head>
-<body></body>
+<body>
+	<script src="calc.js"></script>
+	<form id = "userForm">
+		<div>
+			<label for="roomArea">Total dining room area:</label>
+			<input type = "text" id="roomArea" name="roomArea" required>
+		</div>
+		<div>
+			<label for="numTables">Number of tables: </label>
+			<input type = "text" id="numTables" name="numTables"required>
+		</div>
+		<div>
+			<label for="tableArea">Area of each table: </label>
+			<input type = "text" id="tableArea" name="tableArea"required>
+		</div>
+		<div>
+			<label for="numSeats">Number of seats at each table: </label>
+			<input type = "text" id="numSeats" name="numSeats"required>
+		</div>
+		<button onclick=calcTotalSeats();>Calculate</button>
+	</form>
+</body>
 </html>
