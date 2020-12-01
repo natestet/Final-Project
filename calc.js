@@ -1,8 +1,8 @@
 function socialDistancingCheck(){
 	
 	//Prompt user for initial inputs
-	var numTables = window.prompt("Please enter the number of tables (in feet):");
-	var numSeats = window.prompt("Please enter the number of seats at each table (in feet):");
+	var numTables = window.prompt("Please enter the number of tables:");
+	var numSeats = window.prompt("Please enter the number of seats at each table:");
 	var DINING_ROOM_AREA = 1000;
 	//tables are 4ftx4ft. To calculate the actual area of the table, 6 feet must be added to each dimension, resulting in an area value of 100 ft^2
 	var TABLE_AREA = 100;
